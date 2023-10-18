@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COACHTECH</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+ <nav>
+     <h1>株式会社TECH</h1>
+        <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">企業情報</a></li>
+            <li><a href="#section2">会社概要</a></li>
+            <li><a href="#">よくある質問</a></li>
+            <li><a href="#section1">お問い合わせ</a></li>
+        </ul>
+ </nav>
+ <img src="img/mv.png" alt="代替テキスト">
+
+ <p>最新のテクノロジーで<em>社会課題</em>を解決</p>
+
+ <h2 id="section2">会社概要</h2>
+    <table>
+        <tr>
+            <th><b>会社名</b></th> 
+            <td>株式会社 TECH</td>
+        </tr>
+        <tr>
+            <th><b>代表者</b></th>
+            <td>山田 太郎</td>
+        </tr>
+        <tr>
+            <th><b>所在地</b></th>
+            <td>東京都渋谷区神宮前</td>
+        </tr>
+        <tr>
+            <th><b>設立</b></th>
+            <td>2019年07月17日</td>
+        </tr>
+        <tr>
+            <th><b>従業員数</b></th>
+            <td>100人</td>
+        </tr>
+        <tr>
+            <th><b>資本金</b></th>
+            <td>1000万円</td>
+        </tr>
+    </table>
+ <h2 id="section1">お問い合わせ</h2>
+    <form action="submit.php" method="post">
+
+        <label for="subject">会社名</label>
+        <input type="text" id="subject" name="subject" required><br>
+
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">お問い合わせ内容</label>
+        <textarea rows="6" cols="60" id="message" name="message" required></textarea><br>
+
+        <input type="submit" value="お申し込み">
+    </form>
+ <footer>
+    <small>© 2020 TECH inc.</small>
+ </footer>
+
+</body>
